@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //tradtional way example one
+
+        // function doSomething(){
+        //     console.log("something returned");
+        // }
+
+        const doSomething = () => {
+            console.log("Hello World !");
+        }
+        //tradtional way example two
+        // function returnSomething() {
+        //     return console.log("something returned");
+        // }
+
+        const returnSomething = () => "something returned";
+
+        //tradtional way example three
+        /*
+          function withParam(param1) {
+             console.log(param1);
+             return param1;
+         }
+     
+         */
+        const withParam = withParam => withParam;
+
+        doSomething();
+        console.log(returnSomething());
+        console.log(withParam("aafalu!"));
+
+
+    </script>
+</body>
+
+</html>
